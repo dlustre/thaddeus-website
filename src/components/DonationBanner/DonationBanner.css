@@ -1,0 +1,25 @@
+.donationBanner {
+  height: 150px;
+  background-color: #6acfee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: #fff;
+  font-size: 25px;
+}
+
+.button {
+  color: #e11789;
+  font-weight: 700;
+  background-color: #fff;
+  padding: .7%;
+  margin-top: 30px;
+  border-radius: 20px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
