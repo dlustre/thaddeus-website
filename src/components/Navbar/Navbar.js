@@ -60,6 +60,10 @@ export default function Navbar() {
         title: 'Get Involved',
         path: '/get-involved',
       },
+      {
+        title: 'Internships',
+        path: '/internships',
+      },
     ],
     blogs: [
       {

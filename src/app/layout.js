@@ -1,5 +1,9 @@
 import { Roboto, Alegreya } from 'next/font/google'
 import './globals.css'
+import Image from 'next/image'
+import Navbar from '@/components/Navbar/Navbar'
+import DonationBanner from '@/components/DonationBanner/DonationBanner'
+import Footer from '@/components/Footer/Footer'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -20,7 +24,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${alegreya.variable}`}>{children}</body>
+      <body
+        className={`${roboto.variable} ${alegreya.variable}`}
+      >
+        <Navbar />
+        {children}
+        <Image
+          src='/proverbs.png'
+          alt='Thaddeus Quote'
+          width={1778}
+          height={58}
+          style={{ margin: '25px' }}
+        />
+        <DonationBanner />
+        <Footer />
+      </body>
     </html >
   )
 }

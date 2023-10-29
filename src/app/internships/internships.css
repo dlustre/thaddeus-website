@@ -1,0 +1,32 @@
+.internshipsBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+.internshipsBody h1 {
+  color: #6acfee;
+}
+
+.internshipsBody div {
+  width: 5%;
+  height: 2px;
+  background-color: rgba(177, 177, 177, 0.288);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.internshipsBody a {
+  width: 80%;
+  height: 60px;
+  background-color: #6acfee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}

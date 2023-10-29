@@ -16,12 +16,14 @@
 .footerColumn {
   display: flex;
   flex-direction: column;
+  gap: 4px;
   margin: 50px;
+  font-size: 15px;
 }
 
 .footerColumn h1 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #6acfee;
 }
 

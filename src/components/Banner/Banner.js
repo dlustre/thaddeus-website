@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import './Banner.css';
 
-export function Banner({ src }) {
+export default function Banner({ src, title, description }) {
   return <div className='banner'>
     <Image
       src={src}
@@ -9,21 +9,13 @@ export function Banner({ src }) {
       fill
       style={{ objectFit: "cover" }}
     />
-    <div className='bannerImg' />
-    <h1
-      style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex: 2,
-        color: '#ffffff',
-        textAlign: 'center',
-        fontSize: '44px',
-        textWrap: 'nowrap',
-      }}
-    >
-      RESTORE HOPE, INSPIRE GROWTH, and EMPOWER GIRLS & WOMEN
-    </h1>
+    <div className='bannerMask' />
+    <h1>{title}</h1>
+    {description &&
+      <>
+        <div className='bannerDivider' />
+        <h2>{description}</h2>
+      </>
+    }
   </div>;
 }
