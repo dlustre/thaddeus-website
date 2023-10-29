@@ -33,7 +33,7 @@ export default function Navbar() {
   const items = {
     whoWeAre: [
       {
-        title: 'Our vision',
+        title: 'Our Vision',
         path: '/our-vision',
       },
       {
@@ -107,6 +107,12 @@ export default function Navbar() {
             onClick={closeMobileMenu}
           >
             WHO WE ARE
+            <Image
+              src='/caret-down-fill.svg'
+              alt='down arrow'
+              width={15}
+              height={15}
+            />
           </Link>
           {dropdown[0] && <Dropdown items={items.whoWeAre} />}
         </li>
@@ -121,6 +127,12 @@ export default function Navbar() {
             onClick={closeMobileMenu}
           >
             HOW WE HELP
+            <Image
+              src='/caret-down-fill.svg'
+              alt='down arrow'
+              width={15}
+              height={15}
+            />
           </Link>
           {dropdown[1] && <Dropdown items={items.howWeHelp} />}
         </li>
@@ -135,6 +147,12 @@ export default function Navbar() {
             onClick={closeMobileMenu}
           >
             JOIN US
+            <Image
+              src='/caret-down-fill.svg'
+              alt='down arrow'
+              width={15}
+              height={15}
+            />
           </Link>
           {dropdown[2] && <Dropdown items={items.joinUs} />}
         </li>
@@ -149,8 +167,25 @@ export default function Navbar() {
             onClick={closeMobileMenu}
           >
             BLOGS
+            <Image
+              src='/caret-down-fill.svg'
+              alt='down arrow'
+              width={15}
+              height={15}
+            />
           </Link>
           {dropdown[3] && <Dropdown items={items.blogs} />}
+        </li>
+        <li
+          className='nav-item'
+        >
+          <Link
+            href='#'
+            className='nav-button'
+            onClick={closeMobileMenu}
+          >
+            DONATE
+          </Link>
         </li>
       </ul>
     </nav>

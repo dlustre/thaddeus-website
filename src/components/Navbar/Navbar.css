@@ -5,6 +5,10 @@
   /* justify-content: center; */
   align-items: center;
   font-size: 1.2rem;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: white;
 }
 
 .navbar-logo {
@@ -18,8 +22,8 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 2vw;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 1.5vw;
   list-style: none;
   text-align: center;
   width: 70vw;
@@ -33,6 +37,24 @@
   height: 80px;
 }
 
+.nav-button {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  color: #df1683;
+  border: 3px solid #df1683;
+  border-radius: 10px;
+  text-wrap: nowrap;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.nav-button:hover {
+  transition: all 0.1s;
+  background-color: #df1683;
+  color: white;
+}
+
 .nav-links {
   /* width: 100%; */
   color: 'black';
@@ -40,6 +62,9 @@
   text-wrap: nowrap;
   font-weight: 700;
   padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .nav-links:hover {
