@@ -31,11 +31,15 @@ async function getBlogs() {
 }
 
 async function getBlogBySlug(category, slug) {
-  const filePath = path.join(process.cwd(), 'src', 'data', 'blogs', category, `${slug}.json`);
-  console.log(filePath);
-  const content = await fs.readFile(filePath, 'utf8');
+  try {
 
-  return JSON.parse(content);
+    const filePath = path.join(process.cwd(), 'src', 'data', 'blogs', category, `${slug}.json`);
+    const content = await fs.readFile(filePath, 'utf8');
+
+    return JSON.parse(content);
+  } catch (err) {
+    console.error('An error has occured:', err);
+  }
 }
 
 export async function generateStaticParams() {
