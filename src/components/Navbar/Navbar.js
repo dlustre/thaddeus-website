@@ -65,16 +65,6 @@ export default function Navbar() {
         path: '/internships',
       },
     ],
-    blogs: [
-      {
-        title: 'Business',
-        path: '/business-blogs',
-      },
-      {
-        title: 'Human Resources',
-        path: '/human-resources-blogs',
-      },
-    ]
   }
 
   return (
@@ -162,19 +152,12 @@ export default function Navbar() {
           onMouseLeave={() => { onMouseLeave(3) }}
         >
           <Link
-            href='#'
+            href='/blogs'
             className='nav-links'
             onClick={closeMobileMenu}
           >
             BLOGS
-            <Image
-              src='/caret-down-fill.svg'
-              alt='down arrow'
-              width={15}
-              height={15}
-            />
           </Link>
-          {dropdown[3] && <Dropdown items={items.blogs} />}
         </li>
         <li
           className='nav-item'
