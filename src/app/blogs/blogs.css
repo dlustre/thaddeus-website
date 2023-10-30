@@ -5,3 +5,9 @@
   align-items: center;
   gap: 30px;
 }
+
+.blogsContainer h1 {
+  padding: 20px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}

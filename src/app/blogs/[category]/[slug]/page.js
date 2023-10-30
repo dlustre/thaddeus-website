@@ -1,6 +1,7 @@
 import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
+import './[slug].css';
 
 async function getBlogs() {
   try {
@@ -50,9 +51,11 @@ export default async function Page({ params }) {
   const blog = await getBlogBySlug(params.category, params.slug);
 
   return (
-    <div>
-      <h1>{blog.Title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: blog['Blog Content'] }} />
+    <div className='blogContainer'>
+      <div className='blogCard'>
+        <h1>{blog.Title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: blog['Blog Content'] }} />
+      </div>
     </div>
   );
 }
