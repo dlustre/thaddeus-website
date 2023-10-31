@@ -3,6 +3,11 @@ import Link from 'next/link'
 import Banner from '@/components/Banner/Banner'
 import './internships.css'
 
+export const metadata = {
+  title: 'Internships',
+  description: 'Gain experience at The Thaddeus Resource Center',
+}
+
 export default function Internships() {
   return (
     <>

@@ -17,7 +17,7 @@ const alegreya = Alegreya({
 })
 
 export const metadata = {
-  title: 'Thaddeus Resource Center',
+  title: 'Home',
   description: 'The Thaddeus Resource Center is a charity organization that has been aiding the local community since 1975. Our mission is to inspire HOPE and growth in youth and women in need.',
 }
 

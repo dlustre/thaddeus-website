@@ -51,6 +51,14 @@ export async function generateStaticParams() {
   }))
 }
 
+export async function generateMetadata({ params }) {
+  const blog = await getBlogBySlug(params.category, params.slug);
+
+  return {
+    title: blog.Title,
+  }
+}
+
 export default async function Page({ params }) {
   const blog = await getBlogBySlug(params.category, params.slug);
 

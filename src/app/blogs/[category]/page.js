@@ -31,6 +31,12 @@ async function getBlogs() {
   }
 }
 
+export async function generateMetadata({ params }) {
+  return {
+    title: params.category,
+  }
+}
+
 export default async function Page({ params }) {
   const blogs = await getBlogs();
   return (

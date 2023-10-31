@@ -14,6 +14,11 @@ async function getCategories() {
   }
 }
 
+export const metadata = {
+  title: 'Blogs',
+  description: 'Read up on our blogs to learn about business, self-care, and more!',
+}
+
 export default async function Page() {
   const categories = await getCategories();
 
