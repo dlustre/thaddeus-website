@@ -31,6 +31,14 @@ async function getBlogs() {
   }
 }
 
+export async function generateStaticParams() {
+  const blogs = await getBlogs();
+
+  return blogs.map((blog) => ({
+    category: blog.Category,
+  }))
+}
+
 export async function generateMetadata({ params }) {
   return {
     title: params.category,
