@@ -1,5 +1,6 @@
 .dropdown-menu {
   background: #6acfeeCC;
+  backdrop-filter: blur(4px);
   width: 170px;
   position: absolute;
   top: 85px;
